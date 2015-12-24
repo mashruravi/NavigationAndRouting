@@ -15,7 +15,7 @@ sap.ui.define(["sap/ui/demo/nav/controller/BaseController"], function(BaseContro
 			oArgs = oEvent.getParameters("arguments");
 			
 			oView.bindElement({
-				path: "/Employees("+ oArgs.employeeId +")",
+				path: "/Employees("+ oArgs.arguments.employeeId +")",
 				events: {
 					change: this._onBindingChange.bind(this),
 					dataRequested: function(oEvent) {
