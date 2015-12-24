@@ -15,8 +15,6 @@ sap.ui.define([ "sap/ui/demo/nav/controller/BaseController" ], function(
 					var oArgs, oView;
 					oView = this.getView();
 					oArgs = oEvent.getParameter("arguments");
-					console.log(oEvent.getParameter("employeeId"));
-					console.log(oEvent.getParameters());
 					
 					oView.bindElement({
 						path: "/Employees("+ oArgs.employeeId +")",
